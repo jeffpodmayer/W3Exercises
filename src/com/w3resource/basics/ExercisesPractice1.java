@@ -2,21 +2,17 @@ package com.w3resource.basics;
 
 //HERE IS THE SOLUTIONS --> https://www.w3resource.com/java-exercises/basic/index.php
 
-
-//Copy the template into a new class!
 //Write methods to solve each exercise and then call the methods in the Application class.
 
-public class ExercisesTemplate1to75 {
+public class ExercisesPractice1 {
 //	1. Write a Java program to print 'Hello' on screen and your name on a separate line.
 //	Expected Output :
 //	Hello
 //	Alexandra Abramov
 	
-	
-	
-	
-	
-	
+	 void exercise1(String name) {
+		System.out.println("Hello " + name);
+	}
 	
 ////////////////////	
 //	2. Write a Java program to print the sum of two numbers.
@@ -24,6 +20,11 @@ public class ExercisesTemplate1to75 {
 //	74 + 36
 //	Expected Output :
 //	110
+	 
+	 void exercise2(int firstNumber, int secondNumber) {
+		 int sum = firstNumber + secondNumber;
+		 System.out.println(sum);
+	 }
 	
 ////////////////////	
 //	3. Write a Java program to divide two numbers and print them on the screen.
@@ -32,6 +33,12 @@ public class ExercisesTemplate1to75 {
 //	Expected Output :
 //	16
 	
+	 void exercise3(int numberOne, int numberTwo) {
+		 int solution = numberOne / numberTwo;
+		 System.out.println(solution);
+	 }
+	 
+	 
 ////////////////////	
 //	4.Write a Java program to print the results of the following operations.
 //	Test Data:
