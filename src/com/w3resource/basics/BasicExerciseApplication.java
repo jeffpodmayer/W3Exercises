@@ -58,7 +58,6 @@ public class BasicExerciseApplication {
 		
 //		System.out.println("--> Ex. 31"); 
 //		practice.exercise31();
-//	
 		
 //		System.out.println("--> Ex. 32"); 
 //		practice.exercise32();
@@ -69,8 +68,18 @@ public class BasicExerciseApplication {
 //		System.out.println("--> Ex. 37"); 
 //		practice.exercise37();
 	
-//		System.out.println("--> Ex. 38"); ********GOODONE
+//		System.out.println("--> Ex. 38"); 
 //		practice.exercise38();
+		
+//		System.out.println("--> Ex. 39"); 
+//		practice.exercise39();
+	
+//		System.out.println("--> Ex. 44"); 
+//		practice.exercise44();
+		
+		System.out.println("--> Ex. 46"); 
+		practice.exercise46();
+		
 	
 
 	}

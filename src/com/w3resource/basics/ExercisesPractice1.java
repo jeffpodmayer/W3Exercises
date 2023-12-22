@@ -1,5 +1,7 @@
 package com.w3resource.basics;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
 //HERE IS THE SOLUTIONS --> https://www.w3resource.com/java-exercises/basic/index.php
@@ -604,6 +606,22 @@ public class ExercisesPractice1 {
 //	432                                                      
 //	Total number of the three-digit-number is 24
 
+	void exercise39() {
+		int counter = 0;
+		for (int i = 1; i <= 4; i++) {
+			for (int j = 1; j <= 4; j++) {
+				for (int k = 1; k <= 4; k++) {
+					if (k != i && k != j && i != j) {
+						counter++;
+						System.out.println(i + "" + j + "" + k);
+					}
+
+				}
+			}
+		}
+		System.out.println("The total number of numbers is: " + counter);
+	}
+
 //////////////////
 //	40. Write a Java program to list the available character sets in charset objects.
 //	Expected Output
@@ -662,18 +680,38 @@ public class ExercisesPractice1 {
 //	Input number: 5                                                        
 //	5 + 55  + 555
 
+	void exercise44() {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Input a number: ");
+		String input = scanner.nextLine();
+		
+		scanner.close();
+
+		System.out.println(input + " + " + input + "" + input + " + " + input + "" + input + "" + input);
+	}
+
 //////////////////
 //	45. Write a Java program to find the size of a specified file.
 //	Sample Output:
 //
 //	/home/students/abc.txt  : 0 bytes                                      
 //	/home/students/test.txt : 0 bytes
+	
+	
 
 //////////////////
 //	46. Write a Java program to display system time.
 //	Sample Output:
 //
 //	Current Date time: Fri Jun 16 14:17:40 IST 2017 
+	
+	void exercise46() {
+		DateTimeFormatter formatted = DateTimeFormatter.ofPattern("EEE MMM dd HH:mm:ss a");
+		LocalDateTime now = LocalDateTime.now();
+	
+		
+		System.out.println(now.format(formatted));
+	}
 
 //////////////////
 //	47. Write a Java program to display the current date and time in a specific format.
