@@ -662,6 +662,17 @@ public class ExercisesPractice1 {
 //	Input your Password:                                                    
 //	Your password was: abc@123
 
+	void exercise42() {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Input your password: ");
+
+		String password = scanner.nextLine();
+		scanner.close();
+
+		System.out.println("Your password was: " + password);
+		;
+	}
+
 //////////////////
 //	43. Write a Java program to print the following string in a specific format (see output).
 //	Sample Output
@@ -684,7 +695,7 @@ public class ExercisesPractice1 {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Input a number: ");
 		String input = scanner.nextLine();
-		
+
 		scanner.close();
 
 		System.out.println(input + " + " + input + "" + input + " + " + input + "" + input + "" + input);
@@ -696,20 +707,17 @@ public class ExercisesPractice1 {
 //
 //	/home/students/abc.txt  : 0 bytes                                      
 //	/home/students/test.txt : 0 bytes
-	
-	
 
 //////////////////
 //	46. Write a Java program to display system time.
 //	Sample Output:
 //
 //	Current Date time: Fri Jun 16 14:17:40 IST 2017 
-	
+
 	void exercise46() {
 		DateTimeFormatter formatted = DateTimeFormatter.ofPattern("EEE MMM dd HH:mm:ss a");
 		LocalDateTime now = LocalDateTime.now();
-	
-		
+
 		System.out.println(now.format(formatted));
 	}
 
@@ -718,6 +726,13 @@ public class ExercisesPractice1 {
 //	Sample Output:
 //
 //	Now: 2017/06/16 08:52:03.066 
+
+	void exercise47() {
+		DateTimeFormatter formatit = DateTimeFormatter.ofPattern("yyyy/mm/dd HH:mm:ss.SSS");
+		LocalDateTime now = LocalDateTime.now();
+
+		System.out.println(now.format(formatit));
+	}
 
 //////////////////
 //	48. Write a Java program to print odd numbers from 1 to 99. Prints one number per line.
@@ -738,12 +753,34 @@ public class ExercisesPractice1 {
 //	99  
 //	
 
+	void exercise48() {
+		for (int i = 1; i < 100; i++) {
+			if (i % 2 == 1) {
+				System.out.println(i);
+			}
+		}
+	}
+
 //////////////////
 //	49. Write a Java program to accept a number and check whether the number is even or not. Prints 1 if the number is even or 0 if odd.
 //	Sample Output:
 //
 //	Input a number: 20                                                     
 //	1
+
+	void exercise49() {
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.println("Input a number: ");
+		Integer input = scanner.nextInt();
+		scanner.close();
+
+		if (input % 2 == 1) {
+			System.out.println(0);
+		} else {
+			System.out.println(1);
+		}
+	}
 
 //////////////////
 //	50. Write a Java program to print numbers between 1 and 100 divisible by 3, 5 and both.
@@ -760,12 +797,48 @@ public class ExercisesPractice1 {
 //	Divided by 3 & 5:                                                      
 //	15, 30, 45, 60, 75, 90,
 
+	void exercise50() {
+		System.out.println("Divided by 3:");
+		for (int i = 1; i <= 100; i++) {
+			if (i % 3 == 0) {
+				System.out.print(i + ", ");
+			}
+		}
+
+		System.out.println("\n\nDivided by 5:");
+		for (int j = 1; j <= 100; j++) {
+			if (j % 5 == 0) {
+				System.out.print(j + ", ");
+			}
+		}
+
+		System.out.println("\n\nDivide by 3 & 5:");
+		for (int k = 1; k <= 100; k++) {
+			if (k % 5 == 0 && k % 3 == 0) {
+				System.out.print(k + ", ");
+			}
+		}
+
+	}
+
 //////////////////
 //	51. Write a Java program to convert a string to an integer.
 //	Sample Output:
 //
 //	Input a number(string): 25                                             
 //	The integer value is: 25
+
+	void exercise51() {
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.println("Input a number(string): ");
+		String input = scanner.nextLine();
+		scanner.close();
+
+		Integer numInput = Integer.parseInt(input);
+
+		System.out.println("The integer value is: " + numInput);
+	}
 
 //////////////////
 //	52. Write a Java program to calculate the sum of two integers and return true if the sum is equal to a third integer.

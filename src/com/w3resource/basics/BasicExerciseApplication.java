@@ -77,11 +77,28 @@ public class BasicExerciseApplication {
 //		System.out.println("--> Ex. 44"); 
 //		practice.exercise44();
 		
-		System.out.println("--> Ex. 46"); 
-		practice.exercise46();
+//		System.out.println("--> Ex. 46"); 
+//		practice.exercise46();
 		
-	
+//		System.out.println("--> Ex. 42"); 
+//		practice.exercise42();
 
+//		System.out.println("--> Ex. 47"); 
+//		practice.exercise47();
+		
+//		System.out.println("--> Ex. 48"); 
+//		practice.exercise48();
+		
+		
+//		System.out.println("--> Ex. 49"); 
+//		practice.exercise49();
+	
+	
+//		System.out.println("--> Ex. 50"); 
+//		practice.exercise50();
+		
+		System.out.println("--> Ex. 51"); 
+		practice.exercise51();
 	}
 
 }
