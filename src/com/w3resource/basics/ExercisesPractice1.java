@@ -849,6 +849,26 @@ public class ExercisesPractice1 {
 //			Input the third number : 15                                            
 //			The result is: true
 
+	
+	void exercise52() {
+		Scanner scanner = new Scanner(System.in);
+		Boolean result = false;
+		
+		System.out.println("Input the first number: ");
+		Integer firstInput = scanner.nextInt();
+		System.out.println("Input the second number: ");
+		Integer secondInput = scanner.nextInt();
+		System.out.println("Input the third number: ");
+		Integer thirdInput = scanner.nextInt();
+		scanner.close();
+		
+		if(firstInput + secondInput == thirdInput) {
+			 result = true;
+		} 
+		
+		System.out.println("The result is: " + result);
+		
+	}
 //////////////////
 //	53. Write a Java program that accepts three integers from the user. It returns true if the second number is higher than the first number and the third number is larger than the second number. If "abc" is true, the second number does not need to be larger than the first number.
 //	Sample Output:

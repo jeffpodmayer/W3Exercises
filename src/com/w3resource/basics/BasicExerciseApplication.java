@@ -80,6 +80,7 @@ public class BasicExerciseApplication {
 //		System.out.println("--> Ex. 46"); 
 //		practice.exercise46();
 		
+//--------12/23 below
 //		System.out.println("--> Ex. 42"); 
 //		practice.exercise42();
 
@@ -97,8 +98,11 @@ public class BasicExerciseApplication {
 //		System.out.println("--> Ex. 50"); 
 //		practice.exercise50();
 		
-		System.out.println("--> Ex. 51"); 
-		practice.exercise51();
+//		System.out.println("--> Ex. 51"); 
+//		practice.exercise51();
+		
+		System.out.println("--> Ex. 52"); 
+		practice.exercise52();
 	}
 
 }
