@@ -4,7 +4,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
-//HERE IS THE SOLUTIONS --> https://www.w3resource.com/java-exercises/basic/index.php
+//HERE Are THE SOLUTIONS --> https://www.w3resource.com/java-exercises/basic/index.php
 
 //Write methods to solve each exercise and then call the methods in the Application class.
 
@@ -870,13 +870,36 @@ public class ExercisesPractice1 {
 		
 	}
 //////////////////
-//	53. Write a Java program that accepts three integers from the user. It returns true if the second number is higher than the first number and the third number is larger than the second number. If "abc" is true, the second number does not need to be larger than the first number.
+//	53. Write a Java program that accepts three integers from the user. It returns true 
+//  if the second number is higher than the first number and the third number is larger than 
+//	the second number. If "abc" is true, the second number does not need to be larger than the first number.
 //	Sample Output:
 //
 //	Input the first number : 5                                             
 //	Input the second number: 10                                            
 //	Input the third number : 15                                            
 //	The result is: true
+	
+	void exercise53() {
+		Scanner scanner = new Scanner(System.in);
+		Boolean result = false;
+		
+		System.out.println("Input the first number: ");
+		Integer firstNum = scanner.nextInt();
+		System.out.println("Input the second number: ");
+		Integer secondNum = scanner.nextInt();
+		System.out.println("Input the third number: ");
+		Integer thirdNum = scanner.nextInt();
+		scanner.close();
+
+		if(secondNum > firstNum && thirdNum > secondNum) {
+			result = true;
+			System.out.println("The result is: " + result);
+		} else {
+			System.out.println("The result is: " + result);
+		}
+		
+	}
 
 //////////////////
 //	54. Write a Java program that accepts three integers from the user and returns true if two or more of them (integers) have the same rightmost digit. The integers are non-negative.
