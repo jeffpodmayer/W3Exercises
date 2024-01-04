@@ -909,6 +909,28 @@ public class ExercisesPractice1 {
 //	Input the second number: 10                                            
 //	Input the third number : 15                                            
 //	The result is: true
+	
+	
+	void exercise54() {
+		Scanner scanner = new Scanner(System.in);
+		Boolean result = false;
+		
+		System.out.println("Input the first number(not negative): ");
+		Integer firstNum = scanner.nextInt();
+		System.out.println("Input the second number(not negative): ");
+		Integer secondNum = scanner.nextInt();
+		System.out.println("Input the third number(not negative): ");
+		Integer thirdNum = scanner.nextInt();
+		scanner.close();
+		
+		if(firstNum % 10 == secondNum % 10 || secondNum % 10 == thirdNum % 10 || thirdNum % 10 == firstNum % 10) {
+			result = true;
+			System.out.println("The result is: " + result);
+		} else {
+			System.out.println("The result is: " + result);
+		}
+		
+	}
 
 //////////////////
 //	55. Write a Java program to convert seconds to hours, minutes and seconds.
