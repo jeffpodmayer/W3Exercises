@@ -2,6 +2,8 @@ package com.w3resource.basics;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 //HERE Are THE SOLUTIONS --> https://www.w3resource.com/java-exercises/basic/index.php
@@ -960,6 +962,23 @@ public class ExercisesPractice1 {
 //	Input a Sentence: the quick brown fox jumps over the lazy dog.         
 //	The Quick Brown Fox Jumps Over The Lazy Dog.
 
+	
+	public void exercise58() {	
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Input a lowercase sentence that is: ");
+		String sentence = scanner.nextLine();
+		
+		scanner.close();
+		
+		String[] wordList = sentence.split(" ");
+		
+		for(String word : wordList) {
+			String newWord = word.replace(word.charAt(0), word.toUpperCase().charAt(0));
+			System.out.print(newWord + " ");
+		}
+		
+	}
+	
 //////////////////
 //	59. Write a Java program to convert a string into lowercase.
 //	Sample Output:
@@ -967,6 +986,21 @@ public class ExercisesPractice1 {
 //	Input a String: THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG.           
 //	the quick brown fox jumps over the lazy dog.
 
+	public void exercise59() {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Input a sentence: ");
+		String sentence = scanner.nextLine();
+		
+		scanner.close();
+		
+		String[] wordList = sentence.split(" ");
+		
+		for(String word : wordList) {
+			String newWord = word.toLowerCase();
+			System.out.print(newWord + " ");
+		}
+		
+	}
 //////////////////
 //	60. Write a Java program to find the penultimate (next to the last) word in a sentence.
 //	Sample Output:
