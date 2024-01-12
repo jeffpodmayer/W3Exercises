@@ -2,8 +2,8 @@ package com.w3resource.basics;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Arrays;
+import java.util.Random;
 import java.util.Scanner;
 
 //HERE Are THE SOLUTIONS --> https://www.w3resource.com/java-exercises/basic/index.php
@@ -851,11 +851,10 @@ public class ExercisesPractice1 {
 //			Input the third number : 15                                            
 //			The result is: true
 
-	
 	void exercise52() {
 		Scanner scanner = new Scanner(System.in);
 		Boolean result = false;
-		
+
 		System.out.println("Input the first number: ");
 		Integer firstInput = scanner.nextInt();
 		System.out.println("Input the second number: ");
@@ -863,13 +862,13 @@ public class ExercisesPractice1 {
 		System.out.println("Input the third number: ");
 		Integer thirdInput = scanner.nextInt();
 		scanner.close();
-		
-		if(firstInput + secondInput == thirdInput) {
-			 result = true;
-		} 
-		
+
+		if (firstInput + secondInput == thirdInput) {
+			result = true;
+		}
+
 		System.out.println("The result is: " + result);
-		
+
 	}
 //////////////////
 //	53. Write a Java program that accepts three integers from the user. It returns true 
@@ -881,11 +880,11 @@ public class ExercisesPractice1 {
 //	Input the second number: 10                                            
 //	Input the third number : 15                                            
 //	The result is: true
-	
+
 	void exercise53() {
 		Scanner scanner = new Scanner(System.in);
 		Boolean result = false;
-		
+
 		System.out.println("Input the first number: ");
 		Integer firstNum = scanner.nextInt();
 		System.out.println("Input the second number: ");
@@ -894,13 +893,13 @@ public class ExercisesPractice1 {
 		Integer thirdNum = scanner.nextInt();
 		scanner.close();
 
-		if(secondNum > firstNum && thirdNum > secondNum) {
+		if (secondNum > firstNum && thirdNum > secondNum) {
 			result = true;
 			System.out.println("The result is: " + result);
 		} else {
 			System.out.println("The result is: " + result);
 		}
-		
+
 	}
 
 //////////////////
@@ -911,12 +910,11 @@ public class ExercisesPractice1 {
 //	Input the second number: 10                                            
 //	Input the third number : 15                                            
 //	The result is: true
-	
-	
+
 	void exercise54() {
 		Scanner scanner = new Scanner(System.in);
 		Boolean result = false;
-		
+
 		System.out.println("Input the first number(not negative): ");
 		Integer firstNum = scanner.nextInt();
 		System.out.println("Input the second number(not negative): ");
@@ -924,14 +922,14 @@ public class ExercisesPractice1 {
 		System.out.println("Input the third number(not negative): ");
 		Integer thirdNum = scanner.nextInt();
 		scanner.close();
-		
-		if(firstNum % 10 == secondNum % 10 || secondNum % 10 == thirdNum % 10 || thirdNum % 10 == firstNum % 10) {
+
+		if (firstNum % 10 == secondNum % 10 || secondNum % 10 == thirdNum % 10 || thirdNum % 10 == firstNum % 10) {
 			result = true;
 			System.out.println("The result is: " + result);
 		} else {
 			System.out.println("The result is: " + result);
 		}
-		
+
 	}
 
 //////////////////
@@ -962,23 +960,22 @@ public class ExercisesPractice1 {
 //	Input a Sentence: the quick brown fox jumps over the lazy dog.         
 //	The Quick Brown Fox Jumps Over The Lazy Dog.
 
-	
-	public void exercise58() {	
+	public void exercise58() {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Input a lowercase sentence that is: ");
 		String sentence = scanner.nextLine();
-		
+
 		scanner.close();
-		
+
 		String[] wordList = sentence.split(" ");
-		
-		for(String word : wordList) {
+
+		for (String word : wordList) {
 			String newWord = word.replace(word.charAt(0), word.toUpperCase().charAt(0));
 			System.out.print(newWord + " ");
 		}
-		
+
 	}
-	
+
 //////////////////
 //	59. Write a Java program to convert a string into lowercase.
 //	Sample Output:
@@ -990,16 +987,16 @@ public class ExercisesPractice1 {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Input a sentence: ");
 		String sentence = scanner.nextLine();
-		
+
 		scanner.close();
-		
+
 		String[] wordList = sentence.split(" ");
-		
-		for(String word : wordList) {
+
+		for (String word : wordList) {
 			String newWord = word.toLowerCase();
 			System.out.print(newWord + " ");
 		}
-		
+
 	}
 //////////////////
 //	60. Write a Java program to find the penultimate (next to the last) word in a sentence.
@@ -1117,5 +1114,26 @@ public class ExercisesPractice1 {
 //	Sample Output:
 //
 //	false
+
+	public void exercise75() {
+		Integer[] integerArray = new Integer[10];
+		Random random = new Random();
+
+		for (int i = 0; i < 10; i++) {
+			Integer number = random.nextInt(5);
+			integerArray[i] = number;
+		}
+
+		Integer lastNum = integerArray[9];
+		Integer firstNum = integerArray[0];
+
+		System.out.println(Arrays.toString(integerArray));
+
+		if (lastNum == firstNum) {
+			System.out.println("TRUE!!");
+		} else {
+			System.out.println("FALSE!!");
+		}
+	}
 
 }

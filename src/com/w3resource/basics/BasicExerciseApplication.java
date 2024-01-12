@@ -111,8 +111,11 @@ public class BasicExerciseApplication {
 //		System.out.println("--> Ex. 58"); 
 //		practice.exercise58();
 		
-		System.out.println("--> Ex. 59"); 
-		practice.exercise59();
+//		System.out.println("--> Ex. 59"); 
+//		practice.exercise59();
+		
+		System.out.println("--> Ex. 75"); 
+		practice.exercise75();
 	}
 
 }
